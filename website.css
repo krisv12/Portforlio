@@ -1,0 +1,40 @@
+#landing {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #f9f9f9; /* Light background to complement the jellyfish design */
+}
+
+.landing-content img {
+    max-width: 80%;
+    height: auto;
+
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 20px; /* Positions it near the bottom of the section */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #03468F; /* Customize color */
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.scroll-down:hover {
+    text-decoration: underline; /* Optional hover effect */
+}
+
+.landing-content {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
